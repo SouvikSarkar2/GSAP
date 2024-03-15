@@ -67,14 +67,9 @@ const Menu = () => {
       </div>
       <div className="menu-overlay">
         <div className="menu-overlay-bar">
-          <div className="menu-logo">
-            <Link href={"/"}>Souvik</Link>
-          </div>
-          <div className="menu-close" onClick={toggleMenu}>
-            <p>Close</p>
-          </div>
+          <div className="menu-close"></div>
         </div>
-        <div className="menu-close-icon">
+        <div className="menu-close-icon" onClick={toggleMenu}>
           <p>&#x2715;</p>
         </div>
         <div className="menu-copy">
@@ -95,7 +90,7 @@ const Menu = () => {
           </div>
         </div>
         <div className="menu-preview">
-          <p>View Showreel</p>
+          <p>MENU</p>
         </div>
       </div>
     </div>
