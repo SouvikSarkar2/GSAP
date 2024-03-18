@@ -1,8 +1,8 @@
 .loader {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-  height: 100%;
-  width: 100%;
+  height: 100dvh;
+  width: 100dvw;
 
   display: flex;
   justify-content: center;
