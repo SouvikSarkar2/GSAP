@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 
 export default function Home() {
   const [loaderFinished, setLoaderFinished] = useState<boolean>(false);
-  const [timeline, setTimeline] = useState(null);
+  const [timeline, setTimeline] = useState<any>(null);
 
   useLayoutEffect(() => {
     const context = gsap.context(() => {
@@ -21,6 +21,8 @@ export default function Home() {
     return () => context.revert();
   }, []);
   return (
-    <main>{loaderFinished ? <Hero /> : <Loader timeline={timeline} />}</main>
+    <>
+      <main>{loaderFinished ? <Hero /> : <Loader timeline={timeline} />}</main>
+    </>
   );
 }
